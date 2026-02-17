@@ -6,7 +6,7 @@ Konsolbaserad todo-app från lektion 2 - JavaScript 1.
 
 - **Skapa todo (`createTodo`)** - Lägger till en ny todo i arrayen (`push`)
 - **Radera todo (`deleteTodo`)** - Tar bort en todo baserat på index (`splice`)
-- **Visa alla todos (`showAllTodos`)** - Skriver ut alla todos med titel, deadline och status (`map` + `forEach`)
+- **Visa alla todos (`showAllTodos`)** - Skriver ut alla todos med titel, deadline och status
 - **Visa titlar (`showTodoTitles`)** - Skriver bara ut titlarna (`map`)
 - **Visa todo efter index (`showTodoByIndex`)** - Skriver ut en specifik todo baserat på index
 - **Visa todo efter titel (`showTodoByTitle`)** - Hittar en specifik todo efter titel (`find`)
