@@ -6,16 +6,12 @@ export function showAllTodos(todosArray = []) {
         return;
     }
 
-    // Gå igenom hela todosArray
-    todosArray
-        // map() skapar en NY array baserat på den ursprungliga
-        // För varje todo-objekt omvandlar det till en formaterad sträng
-        .map((todo, i) =>
-            // Skapar en läsbar text med index, titel, deadline och status
-            `${i}: ${todo.title} | Deadline: ${todo.deadline} | Completed: ${todo.completed}`)
+    for (let i = 0; i < todosArray.length; i++) {
+        const todo = todosArray[i];
 
-        // forEach() itererar över den nya arrayen (med strängar)
-        // Varje rad skrivs ut i konsolen
-        .forEach(line => console.log(line));
+        console.log(
+            `${i}: ${todo.title} | Deadline: ${todo.deadline} | Completed: ${todo.completed}`
+        );
+    }
 }
 
