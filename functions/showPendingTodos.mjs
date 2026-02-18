@@ -8,7 +8,7 @@ export function showPendingTodos(todosArray = []) {
         return;
     }
 
-    pending.forEach((todo, i) => {
-        console.log(`${i}: ${todo.title} | Deadline: ${todo.deadline}`);
-    });
+    for (let i = 0; i < pending.length; i++) {
+        console.log(`${i}: ${pending[i].title} | Deadline: ${pending[i].deadline}`);
+    }
 }

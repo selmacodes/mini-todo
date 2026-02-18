@@ -7,9 +7,9 @@ export function deleteTodo(todosArray = []) {
     }
 
     // För att användaren ska veta vilken som ska raderas visas alla todos med index
-    todosArray.forEach((todo, i) => {
-        console.log(`${i}: ${todo.title}`);
-    });
+    for (let i = 0; i < todosArray.length; i++) {
+        console.log(`${i}: ${todosArray[i].title}`);
+    }
 
     // Fråga användaren vilken todo (index) som ska raderas
     const index = Number(prompt("Which todo would you like to delete? Enter the index: "));

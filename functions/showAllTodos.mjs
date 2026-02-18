@@ -9,9 +9,7 @@ export function showAllTodos(todosArray = []) {
     for (let i = 0; i < todosArray.length; i++) {
         const todo = todosArray[i];
 
-        console.log(
-            `${i}: ${todo.title} | Deadline: ${todo.deadline} | Completed: ${todo.completed}`
-        );
+        console.log(`${i}: ${todo.title} | Deadline: ${todo.deadline} | Completed: ${todo.completed}`);
     }
 }
 
